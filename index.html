@@ -9,16 +9,41 @@
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-temperature-arrow-down"></i>
-        <h1>Weather Dashboard</h1>
-        <i class="fa-solid fa-temperature-arrow-up"></i>
+        <i class="fa-solid fa-temperature-arrow-down is-size-2 has-text-white ml-5"></i>
+        <h1 class="title has-text-centered has-text-white mt-4">Weather Dashboard</h1>
+        <i class="fa-solid fa-temperature-arrow-up is-size-2 has-text-white mr-5"></i>
     </header>
-
-    <div class="uv">
-        <p class="is-justify-content-space-between	">Mild Moderate High Swelter
+<form class="mt-4" id="cityInput">
+    <label class="has-text-white" for="city">City:</label>
+    <input type="text" placeholder="Enter city name..." id="city">
+    <input class="button is-small" type="submit" id="citySelector" value="Select City">
+</form>
+<div class="uv">
+    <table>
+        <tr>
+            <td class="has-text-centered has-background-success">Mild</td>
+        </tr>
+        <tr>
+            <td class="has-text-centered has-background-warning">Moderate</td>
+        </tr>
+        <tr>
+            <td class="has-text-centered" id="tempHigh">High</td>
+        </tr>
+        <tr>
+            <td class="has-text-centered has-background-danger">Very High</td>
+        </tr>
+        <tr>
+            <td class="has-text-centered" id="tempSwelter">Swelter</td>
+        </tr>
+    </table>
+</div>
+    <!-- <div class="uv">
+        <p class="is-size-5 mt-2 has-text-centered has-text-white">Mild Moderate High Swelter
         </p>
-    </div>
+    </div> -->
     <script src="https://kit.fontawesome.com/d3cdb9f10e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

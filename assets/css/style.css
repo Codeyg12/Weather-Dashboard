@@ -5,27 +5,28 @@
 }
 
 html {
-    background-color: #111893;
+    background-color: #00beef;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 5rem;
-    background-color: #00beef;
-    text-align: center;
-    color: black;
+    background-color: #111893;
     justify-content: space-between;
-    align-items: center;
-    font-size: 3rem;
+    align-items: center;    
 }
 
-i {
-    margin: 0 25px;
-}
+ #tempHigh {
+    background-color: orange;
+ }
 
- 
-.uv {
+ #tempSwelter {
+    background-color: rgb(189, 28, 189);
+    color: #fff;
+ }
+/* .uv {
     background: linear-gradient(
     green 0%,
     green 20%,
@@ -37,17 +38,15 @@ i {
     red 80%,
     purple 80%,
     purple 100%);
-    width: 100px;
+    width: 120px;
    height: 200px;
    float: right;
-  }
-
-  .uv p {
+  } */
+  /* .uv p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 18px;
     font-weight: bolder;
   line-height: 48px;
   color: black;
-  }
+  } */
