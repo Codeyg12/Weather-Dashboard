@@ -38,5 +38,16 @@ i {
     purple 80%,
     purple 100%);
     width: 100px;
-    height: 200px;
+   height: 200px;
+   float: right;
+  }
+
+  .uv p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: bolder;
+  line-height: 48px;
+  color: black;
   }
