@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header>  
         <i class="fa-solid fa-temperature-arrow-down is-size-2 has-text-white ml-5"></i>
         <h1 class="title has-text-centered has-text-white mt-4">Weather Dashboard</h1>
         <i class="fa-solid fa-temperature-arrow-up is-size-2 has-text-white mr-5"></i>
     </header>
 <form class="mt-4" id="cityInput">
-    <label class="has-text-white" for="city">City:</label>
+    <label class="has-text-black" for="city">City:</label>
     <input type="text" placeholder="Enter city name..." id="city">
     <input class="button is-small" type="submit" id="citySelector" value="Select City">
 </form>
-<div class="uv">
+<aside>
+<div class="recentSearches has-background-white ml-6 mt-5">
+    <h2 class="has-text-black has-text-centered">Recent Searches</h2>
+</div>
+<button id="clear" class="ml-5 button is-fullwidth is-info">Clear History</button>
+<div class="uv ml-6 pl-6">
     <table>
         <tr>
             <td class="has-text-centered has-background-success">Mild</td>
@@ -37,10 +42,43 @@
         </tr>
     </table>
 </div>
-    <!-- <div class="uv">
-        <p class="is-size-5 mt-2 has-text-centered has-text-white">Mild Moderate High Swelter
-        </p>
-    </div> -->
+</aside>
+   <div class="currentWeather row">
+    <h2 class="subtitle has-text-centered is-size-3">Current Weather Conditions</h2>
+    <table id="currentData"  class="table is-fullwidth">
+        <thead>
+            <tr class="has-text-centered">
+                <th scope="col">Location</th> <!---add icon-->
+                <th scope="col">Temp</th>
+                <th scope="col">Skies</th>
+                <th scope="col">Humidity</th>
+                <th scope="col">Winds</th>
+                <th scope="col">UVI</th>
+            </tr>
+        </thead>
+        <tbody id="curentConditions">
+
+        </tbody>
+    </table>
+   </divid>
+   <div id="fiveDay">
+<h2 id="fiveDayFore" class="subtitle has-text-centered is-size-3 mt-4">5 Day Forecast</h2>
+<table  class="table is-fullwidth">
+    <thead>
+        <tr class="has-text-centered">
+            <th scope="col">Date</th>
+            <th scope="col">Temp</th>
+            <th scope="col">Skies</th>
+            <th scope="col">Humidity</th>
+            <th scope="col">Winds</th>
+        </tr>
+    </thead>
+    <tbody id="fiveDayTable">
+
+    </tbody>
+</table>
+   </div>
+  
     <script src="https://kit.fontawesome.com/d3cdb9f10e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>

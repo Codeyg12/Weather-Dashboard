@@ -26,27 +26,24 @@ header {
     background-color: rgb(189, 28, 189);
     color: #fff;
  }
-/* .uv {
-    background: linear-gradient(
-    green 0%,
-    green 20%,
-    yellow 20%,
-    yellow 40%,
-    orange 40%,
-    orange 60%,
-    red 60%,
-    red 80%,
-    purple 80%,
-    purple 100%);
-    width: 120px;
-   height: 200px;
-   float: right;
-  } */
-  /* .uv p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-weight: bolder;
-  line-height: 48px;
-  color: black;
-  } */
+
+ .currentWeather {
+    width: 75%;
+    float: right;
+ }
+
+ aside {
+    width: 20%;
+    float: left
+ }
+
+/* 
+ .fiveDay {
+    width: 75%;
+    float: left; */
+ /* } */
+
+ /* #fiveDay {} */
+
+
+ 
