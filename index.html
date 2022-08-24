@@ -16,10 +16,10 @@
 <form class="mt-4" id="cityInput">
     <label class="has-text-black" for="city">City:</label>
     <input type="text" placeholder="Enter city name..." id="city">
-    <input class="button is-small" type="submit" id="citySelector" value="Select City">
+    <input class="button is-small" type="submit" id="citySelect" value="Select City">
 </form>
 <aside>
-<div class="recentSearches has-background-white ml-6 mt-5">
+<div class="recentSearches has-background-white ml-6 mt-5" id="recentSearches">
     <h2 class="has-text-black has-text-centered">Recent Searches</h2>
 </div>
 <button id="clear" class="ml-5 button is-fullwidth is-info">Clear History</button>
@@ -56,7 +56,7 @@
                 <th scope="col">UVI</th>
             </tr>
         </thead>
-        <tbody id="curentConditions">
+        <tbody id="currentConditions">
 
         </tbody>
     </table>
