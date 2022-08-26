@@ -37,13 +37,8 @@ header {
     float: left
  }
 
-/* 
- .fiveDay {
-    width: 75%;
-    float: left; */
- /* } */
 
- /* #fiveDay {} */
-
-
- 
+ #fiveDay {
+    width: 80%;
+    float: left; 
+ }
