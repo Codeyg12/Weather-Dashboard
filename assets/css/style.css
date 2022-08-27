@@ -18,11 +18,11 @@ header {
     align-items: center;    
 }
 
- #tempHigh {
+ .tempHigh {
     background-color: orange;
  }
 
- #tempSwelter {
+ .tempSwelter {
     background-color: rgb(189, 28, 189);
     color: #fff;
  }
@@ -39,6 +39,6 @@ header {
 
 
  #fiveDay {
-    width: 80%;
+    width: 100%;
     float: left; 
  }
