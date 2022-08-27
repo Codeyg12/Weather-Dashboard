@@ -13,9 +13,8 @@
 
   [Contribution](#contribution)
 
-  [Testing](#test)
-  
-  [License](#license)
+  [Links](#links)
+
 
   ### Description
   
@@ -54,12 +53,6 @@
   ### Contribution
 
   Code can always be improved and if you have a suggestion to improve this project then fork the repo and create a pull request.
-
-  <p align="right"><a href="#readme-top">(Return to top)</a></p>
-
-  ### Testing
-
-  npm test
 
   <p align="right"><a href="#readme-top">(Return to top)</a></p>
 
