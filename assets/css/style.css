@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- 
+    border: 1px solid red;
 }
 
 html {
@@ -41,4 +41,31 @@ header {
  #fiveDay {
     width: 100%;
     float: left; 
+ }
+
+ @media all and (max-width: 800px) {
+   aside {
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .recentSearches {
+      width: 100%;
+      /* top: 0px;
+      left: 1%; */
+   }
+
+   .currentWeather {
+      width: 70%;
+   }
+
+   #currentList {
+      font-size: x-small;
+   }
+
+   .table {
+      width: 100%;
+      bottom: 100%;
+   }
  }
